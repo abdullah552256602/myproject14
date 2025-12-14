@@ -1,5 +1,6 @@
 from django.urls import path
+from .views import home
 
-# ملف روابط تطبيق core
-# لا يوجد مسارات حالياً
-urlpatterns = []
+urlpatterns = [
+    path('', home, name='home'),
+]
